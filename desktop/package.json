@@ -1,0 +1,15 @@
+{
+  "name": "installments",
+  "version": "1.0.0",
+  "description": "Installments tracker",
+  "main": "main.js",
+  "scripts": { "start": "electron .", "dist": "electron-builder" },
+  "devDependencies": { "electron": "^33.0.0", "electron-builder": "^25.0.0" },
+  "build": {
+    "appId": "com.local.installments",
+    "productName": "Installments",
+    "files": ["main.js", "www/**"],
+    "win": { "target": "nsis" },
+    "mac": { "target": "dmg" }
+  }
+}
